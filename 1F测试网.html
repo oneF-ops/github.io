@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trade - Professional International Trading</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 导航栏 */
+        nav {
+            background: #1a3b61;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            color: #ffc107;
+        }
+
+        /* 横幅 */
+        .banner {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://img0.baidu.com/it/u=82932021,2938202504&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: #ffc107;
+            color: #1a3b61;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #ffdb4d;
+        }
+
+        /* 产品区域 */
+        .container {
+            width: 1200px;
+            margin: 50px auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #1a3b61;
+            margin-bottom: 40px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .product {
+            width: 260px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #f5f5f5;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1a3b61;
+        }
+
+        .desc {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* 关于我们 */
+        .about {
+            background: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .about p {
+            width: 800px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* 联系我们 */
+        .contact {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #1a3b61;
+            margin: 10px 0;
+        }
+
+        /* 底部 */
+        footer {
+            background: #1a3b61;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav>
+    <div class="logo">Global Trade</div>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- 横幅 -->
+<div class="banner" id="home">
+    <h1>Professional International Trading</h1>
+    <p>High Quality · Global Shipping · Best Service</p>
+    <a href="#products" class="btn">View Products</a>
+</div>
+
+<!-- 产品 -->
+<div class="container" id="products">
+    <h2 class="title">Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <div class="info">
+                <div class="name">Electronic Products</div>
+                <div class="desc">High quality electronic accessories for global market</div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <div class="info">
+                <div class="name">Home Appliances</div>
+                <div class="desc">Durable home products with competitive price</div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <div class="info">
+                <div class="name">Fashion Clothing</div>
+                <div class="desc">Latest design clothing for worldwide customers</div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <div class="info">
+                <div class="name">Hardware Tools</div>
+                <div class="desc">Industrial tools with high standard quality</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 关于我们 -->
+<div class="about" id="about">
+    <div class="container">
+        <h2 class="title">About Us</h2>
+        <p>
+            We are a professional international trading company located in China.
+            We have rich experience in export business, providing high-quality products
+            to customers all over the world. Our main markets include Europe, America,
+            Southeast Asia, Middle East and Africa. We insist on quality first, customer supreme.
+        </p>
+    </div>
+</div>
+
+<!-- 联系我们 -->
+<div class="contact" id="contact">
+    <h2 class="title">Contact Us</h2>
+    <p>Email: global@trade.com</p>
+    <p>Phone: +86 138 0000 0000</p>
+    <p>Address: Shenzhen, Guangdong, China</p>
+</div>
+
+<!-- 底部 -->
+<footer>
+    <p>© 2026 Global Trade. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
